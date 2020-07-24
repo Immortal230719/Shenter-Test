@@ -1,0 +1,29 @@
+.unorderedList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  & li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    height: 34px;
+    padding: 0 15px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+
+    & a {
+      text-decoration: none;
+      color: azure;
+    }
+  }
+}
+
+.subscr-title {
+  font-size: 30px;
+}

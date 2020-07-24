@@ -1,0 +1,48 @@
+.inputText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & label {
+    display: none
+  }
+
+  & input {
+    display: block;
+    background: inherit;
+    color: aliceblue;
+    border-radius: 10px;
+    height: 60px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+
+    @media (--tabletPortrait) {
+      width: 450px;
+      height: 46px;
+      font-size: 16px;
+      padding: 7px 10px;
+    }
+
+    @media (--phoneLandscape) {
+      width: 100%;
+      height: 46px;
+      font-size: 16px;
+      padding: 7px 10px;
+    }
+
+    @media (--phonePortrait) {
+      width: 100%;
+      height: 46px;
+      font-size: 16px;
+      padding: 7px 10px;
+    }
+  }
+}
+
+input:focus {
+  outline: none;
+}

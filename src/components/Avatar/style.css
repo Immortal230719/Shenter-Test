@@ -1,0 +1,57 @@
+.avatar {
+  display: flex; 
+
+  & figure {
+    position: relative;
+
+    @media (--tabletPortrait) {
+      margin: 20px 0 0 0;
+    }
+
+    @media (--phoneLandscape) {
+      margin: 20px 0 0 0;
+    }
+
+    @media (--phonePortrait) {
+      margin: 20px 0 0 0;
+    }
+
+    & figcaption {
+      font-size: 24px;
+      padding: 7px 15px;
+      width: fit-content;
+
+      @media (--tabletPortrait) {
+        font-size: 18px;
+      }
+
+      @media (--phoneLandscape) {
+        font-size: 18px;
+      }
+
+      @media (--phonePortrait) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  & img {
+    max-width: 300px;
+    max-height: 100%; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+
+    @media (--tabletPortrait) {
+      max-width: 250px;
+    }
+
+    @media (--phoneLandscape) {
+      max-width: 220px;
+    }
+
+    @media (--phonePortrait) {
+      max-width: 180px;
+    }
+  }
+}
